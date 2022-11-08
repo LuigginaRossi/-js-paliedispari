@@ -17,6 +17,7 @@ console.log("inverto array:"+ arrayWordUser);
  */
 function checkWordPalidr( word ){
 //   for (let i = 0; i < arrayWordUser.length; i++) {
+    //INSERIRE RETURN DI BLOCCO AL POSSIBILE RISULTATO UNDEFINED
  let i = 0;
  i++;
         if( wordUser[i] === arrayWordUser[i]){
