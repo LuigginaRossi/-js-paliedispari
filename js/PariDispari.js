@@ -14,11 +14,11 @@ console.log(userPrediction);
 const numeroUser =  parseInt(prompt("Inserisci un numero da 1 a 5!"));
 console.log(numeroUser);
 
-// const numRandomAi = Math.floor(Math.random() * 5) + 1;
-// console.log(numRandomAi);
+
 /**
  * Calcolo un numero random per Ai:
  * @param {number} num 
+ * @return {number}
  */
 function calcNumRandomAi ( num ) {
     const numRandomAi = Math.floor(Math.random() * 5) + 1;
@@ -32,13 +32,12 @@ console.log(numAi);
 
 const risultato = numeroUser + numAi;
 console.log("risultato somma" + risultato)
-/******************************************
- * Creo funzione per stabilire se il risultato è pari o dispari.
- */
+/* Creo funzione per stabilire se il risultato è pari o dispari. */
 
 /**
  * Verifico se il risultato della somma è pari o dispari
  * @param {number} num
+ * @return {string}
  */
 function checkPariDispari (num){
     if(risultato % 2 === 0){
@@ -51,9 +50,7 @@ function checkPariDispari (num){
 const risultatoSommaPariDispari = checkPariDispari();
 console.log(risultatoSommaPariDispari);
 
-/*********************************
- * Dichiariamo chi ha vinto. Se l’utente ha scritto “pari” e la somma è pari, ha vinto l’utente. Se l’utente ha scritto “pari” e la somma è dispari, ha vinto il pc
- */
+/* Dichiariamo chi ha vinto. */
 
      if( ((userPrediction === "pari") && (risultato % 2 === 0)) || ((userPrediction === "dispari") && (risultato % 2 === 1))){
         console.log("Vittoria! Supremazia Umana!");
@@ -62,9 +59,5 @@ console.log(risultatoSommaPariDispari);
     }
 
 
-    //  console.log("Vittoria! Supremazia Umana!");
-    // }else{
-    //     console.log("Sconfitta! Potere ai robot!")
-    // }
 
     
