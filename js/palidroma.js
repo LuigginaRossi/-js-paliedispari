@@ -22,12 +22,13 @@ function checkWordPalidr( word ){
         if( wordUser[i] === arrayWordUser[i]){
             //return "Ottimo lavoro! Hai ins[rito una parola palidroma!";
             console.log("Ottimo lavoro! Hai inserito una parola palidroma!")
+            
         }else{
             alert("Attenzione! La parola inserita non è Palidroma! Ricarica la pagina prova ancora!")
-        }
-   }
+        } 
+   //}
     
-//}
+}
 
 checkWordPalidr();
 
