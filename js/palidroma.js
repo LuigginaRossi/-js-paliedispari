@@ -35,3 +35,5 @@ function checkWordPalidr( word ){
 }
 
 checkWordPalidr();
+
+//problemi dopo esecuzione di tutto il cod, la pagina si impalla e da i numeri! :'D
